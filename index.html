@@ -2,45 +2,160 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>터키 & 한국 주요 뉴스</title>
+  <title>터키 & 한국 주요 뉴스 리포트</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 16px; line-height: 1.6; }
-    h1 { font-size: 22px; }
-    .news { margin-bottom: 24px; }
-    .title { font-weight: bold; font-size: 18px; }
-    .summary { margin: 8px 0; }
-    details { background: #f5f5f5; padding: 10px; border-radius: 8px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; line-height: 1.7; color: #333; background-color: #f9f9f9; }
+    h1 { font-size: 24px; border-bottom: 2px solid #0056b3; padding-bottom: 10px; margin-top: 30px; color: #0056b3; }
+    .news-container { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; }
+    .news-item { margin-bottom: 20px; border-bottom: 1px dotted #ccc; padding-bottom: 15px; }
+    .news-item:last-child { border-bottom: none; }
+    .title { font-weight: bold; font-size: 18px; color: #222; margin-bottom: 5px; }
+    .summary { color: #555; font-size: 15px; margin-bottom: 10px; }
+    details { background: #f0f4f8; padding: 12px; border-radius: 8px; font-size: 14.5px; cursor: pointer; }
+    summary { font-weight: bold; color: #0056b3; outline: none; }
+    details p { margin-top: 10px; white-space: pre-line; color: #444; }
   </style>
 </head>
 <body>
 
-<h1>🇹🇷 터키 주요 뉴스</h1>
+<h1>🇹🇷 터키 주요 뉴스 (Top 5)</h1>
 
-<div class="news">
-  <div class="title">터키 중앙은행, 금리 동결</div>
-  <div class="summary">터키 중앙은행은 인플레이션 안정화를 이유로 기준금리를 유지했습니다.</div>
-  <details>
-    <summary>자세히 보기</summary>
-    <p>
-      중앙은행은 환율 안정과 소비 둔화를 근거로 금리를 동결했으며,
-      향후 경제 지표에 따라 추가 정책 조정을 검토하겠다고 밝혔습니다.
-    </p>
-  </details>
+<div class="news-container">
+  <div class="news-item">
+    <div class="title">터키 중앙은행, 통화 정책 기조 및 금리 유지 발표</div>
+    <div class="summary">인플레이션 억제를 위한 긴축 기조 유지와 시장 안정화 대책 논의</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        중앙은행은 최근 발표된 경제 지표를 바탕으로 소비자 물가 상승률을 목표치로 되돌리기 위해 현재의 고금리 기조를 유지하기로 결정했습니다. 
+        특히 서비스 물가의 경직성과 지정학적 리스크로 인한 에너지 가격 변동성을 예의주시하고 있으며, 필요한 경우 추가적인 유동성 조절 도구를 활용할 방침입니다. 
+        시장 전문가들은 이번 결정이 리라화 가치 방어에 긍정적인 신호를 줄 것으로 분석하고 있습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">이스탄불 기술 허브, 글로벌 스타트업 투자 유치 확대</div>
+    <div class="summary">유럽과 아시아를 잇는 지리적 이점을 활용한 IT 생태계 강화</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        터키 정부의 기술 혁신 지원 정책에 힘입어 이스탄불을 중심으로 한 테크 기업들에 대한 해외 자본 유입이 가속화되고 있습니다. 
+        게임 산업뿐만 아니라 핀테크, AI 솔루션 분야의 스타트업들이 유럽 및 중동 벤처 캐피털로부터 대규모 투자를 기록했습니다. 
+        정부는 디지털 노마드 비자 도입과 세제 혜택을 통해 이스탄불을 '글로벌 3대 기술 거점'으로 도약시키겠다는 포부를 밝혔습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">터키 관광 산업, 역대 최다 방문객 기록 경신 전망</div>
+    <div class="summary">에페스 등 유적지 현대화 및 의료 관광 수요 급증</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        올해 상반기 터키를 찾은 외국인 관광객 수가 전년 동기 대비 15% 이상 증가했습니다. 
+        특히 에페스, 파묵칼레 등 주요 역사 유적지의 야간 개장 및 시설 현대화 사업이 큰 호응을 얻고 있습니다. 
+        또한 유럽과 중동 지역에서 저렴하고 질 높은 의료 서비스를 받기 위해 방문하는 '의료 관광객'이 신규 성장 동력으로 자리 잡으며 관광 수지 개선에 기여하고 있습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">터키 에너지 자립을 위한 흑해 가스전 추가 시추 계획</div>
+    <div class="summary">천연가스 수입 의존도 절감을 위한 국책 사업 가속화</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        에너지 자립도를 높이기 위해 흑해 사카리아 가스전의 생산량을 확대하고 추가 시추선을 투입할 계획입니다. 
+        터키 에너지부는 이번 사업을 통해 향후 수년 내 가정용 가스 수요의 상당 부분을 자급자족할 수 있을 것으로 기대하고 있습니다. 
+        이는 만성적인 경상수지 적자의 주요 원인인 에너지 수입 비용을 줄이는 핵심 열쇠가 될 것으로 보입니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">전통 예술과 현대 디자인의 만남, '안탈리아 비엔날레' 개최</div>
+    <div class="summary">지역 문화 자산을 활용한 국제 예술 축제 성황</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        지중해의 진주 안탈리아에서 세계 각국의 예술가들이 참여하는 비엔날레가 열렸습니다. 
+        이번 축제는 터키 전통 자수와 도자기 기법을 현대적 감각으로 재해석한 작품들이 주를 이루었습니다. 
+        문화관광부는 이러한 국제 행사를 통해 터키의 소프트 파워를 강화하고 지역 경제 활성화를 도모하고 있습니다.
+      </p>
+    </details>
+  </div>
 </div>
 
-<h1>🇰🇷 한국 관련 뉴스</h1>
+<h1>🇰🇷 한국 관련 주요 뉴스 (Top 5)</h1>
 
-<div class="news">
-  <div class="title">한국 기업, 터키 인프라 투자 확대</div>
-  <div class="summary">한국 건설사들이 터키 인프라 시장 진출을 확대하고 있습니다.</div>
-  <details>
-    <summary>자세히 보기</summary>
-    <p>
-      철도·에너지 분야에서 한국 기업들의 참여가 늘어나고 있으며,
-      양국 간 경제 협력이 장기적으로 강화될 전망입니다.
-    </p>
-  </details>
+<div class="news-container">
+  <div class="news-item">
+    <div class="title">한국-터키 전략적 경제 파트너십 강화 합의</div>
+    <div class="summary">첨단 기술 및 방산 분야 협력 로드맵 구축</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        양국 정부 관계자들이 만나 에너지, 교통 인프라, 그리고 방위 산업 분야에서의 협력을 심화하기로 했습니다. 
+        특히 한국의 IT 기술과 터키의 제조 역량을 결합한 공동 프로젝트가 논의되었으며, 
+        자유무역협정(FTA)의 범위를 디지털 서비스 분야까지 확대하는 방안을 검토 중입니다. 
+        이는 형제의 나라를 넘어 실질적 경제 동반자 관계를 공고히 하는 계기가 될 것입니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">한국 반도체 기업, 글로벌 공급망 다변화 전략 발표</div>
+    <div class="summary">유럽 시장 거점으로 터키의 전략적 가치 주목</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        한국의 주요 반도체 및 전자 기업들이 지정학적 리스크 관리를 위해 공급망을 다변화하고 있습니다. 
+        이 과정에서 유럽과 중동의 가교 역할을 하는 터키가 매력적인 물류 및 생산 거점으로 부상하고 있습니다. 
+        일부 부품 협력사들의 터키 현지 진출 검토 소식이 전해지며 양국 간 하이테크 산업 생태계 연결 가능성이 높아지고 있습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">K-콘텐츠 열풍, 터키 현지 OTT 시장 석권</div>
+    <div class="summary">한국 드라마와 영화, 터키 시청률 상위권 기록</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        한국 드라마가 터키 주요 OTT 플랫폼에서 시청률 1위를 기록하며 문화적 공감대를 형성하고 있습니다. 
+        드라마뿐만 아니라 웹툰, 게임 등 다양한 장르의 K-콘텐츠가 터키 젊은 층 사이에서 폭발적인 인기를 끌고 있습니다. 
+        이러한 인기는 한글 학습 수요 증가와 한국 제품에 대한 선호도로 이어지며 강력한 '낙수 효과'를 보여주고 있습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">한국 기업, 터키 친환경 에너지 프로젝트 수주 건수 증가</div>
+    <div class="summary">태양광 및 수소 에너지 분야 기술 협력 결실</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        한국의 재생에너지 전문 기업들이 터키 중부 지역의 대규모 태양광 발전소 건설 사업권을 확보했습니다. 
+        터키의 풍부한 일조량과 한국의 고효율 패널 기술이 만나 탄소 중립 목표 달성에 기여하고 있습니다. 
+        또한 수소 경제 인프라 구축을 위한 공동 연구 개발 협약도 체결되어 미래 에너지 시장을 선점하기 위한 발판을 마련했습니다.
+      </p>
+    </details>
+  </div>
+
+  <div class="news-item">
+    <div class="title">한국행 터키 관광객 급증, 직항 노선 증편 논의</div>
+    <div class="summary">상호 방문객 100만 명 시대 향한 하늘길 확대</div>
+    <details>
+      <summary>상세 내용 보기</summary>
+      <p>
+        한국을 방문하는 터키 관광객이 역대 최고치를 기록함에 따라 이스탄불-인천 노선의 항공편 증편이 논의되고 있습니다. 
+        한국의 미식, 쇼핑, 그리고 현대적 도시 경관이 터키 여행객들에게 새로운 매력 포인트로 작용하고 있습니다. 
+        양국 항공 당국은 운수권 확대를 통해 인적 교류를 더욱 활성화하고 관광 산업의 동반 성장을 꾀하고 있습니다.
+      </p>
+    </details>
+  </div>
 </div>
 
 </body>
