@@ -1,0 +1,25 @@
+name: Daily News Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 한국 시간 오전 9시(UTC 0시)에 자동 실행
+  workflow_dispatch: # 필요할 때 수동으로도 실행 가능하게 함
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Update News Date
+        run: |
+          echo "마지막 업데이트: $(date)" > update_log.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "뉴스 자동 업데이트 실행" || echo "변경 사항 없음"
+          git push
